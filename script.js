@@ -42,13 +42,17 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (var i=0; i < names.length; i++) {
-    if ( charAt(0).toLowerCase() == "j") {
-      byeSpeaker.speak(name);
+ for (var i=0; i < names.length; i++) {
+
+     if ( names[i].charAt(0).toLowerCase() == "j") {
+      byeSpeaker.speak(names[i]);
     } else {
-      helloSpeaker.speak(name);
+      helloSpeaker.speak(names[i]);
     }
-}
+   
+  }
+
+
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
   // Use the string object's 'charAt' function. Since we are looking for
